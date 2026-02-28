@@ -16,12 +16,15 @@
   }
 
   .link-lift {
-    @apply transition-transform duration-300 hover:-translate-y-[1px];
+    transition: transform 300ms;
+  }
+
+  .link-lift:hover {
+    transform: translateY(-1px);
   }
 }
 
 body {
-  /* Override default margin */
   margin: 0;
   padding: 0;
 }
